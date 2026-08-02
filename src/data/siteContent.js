@@ -9,6 +9,7 @@ export const siteContent = {
     menu: 'Abrir menu', close: 'Fechar menu', readMore: 'Saiba mais', back: 'Voltar',
     contact: 'Entre em contato', allContent: 'Ver todos os conteúdos', send: 'Enviar mensagem',
     required: 'Campos com * são obrigatórios.', privacy: 'Política de privacidade',
+    form: { name: 'Nome', email: 'E-mail', phone: 'Telefone', message: 'Mensagem' },
   },
   hero: {
     eyebrow: 'Apresentação', title: 'Clareza para dar o próximo passo.',
@@ -53,5 +54,14 @@ export const siteContent = {
   ],
   contact: { eyebrow: 'Contato', title: 'Vamos conversar?', description: 'Envie uma mensagem para receber informações iniciais.', channels: [{ label: 'Canal de contato', value: '[informação a definir]' }, { label: 'Disponibilidade', value: '[informação a definir]' }] },
   cta: { title: 'Um bom começo pode ser simples.', description: 'Escolha um canal e dê o primeiro passo no seu tempo.', action: { label: 'Fale comigo', href: '/contato' } },
+  pages: {
+    home: { items: { eyebrow: 'Possibilidades', title: 'Itens que se adaptam ao seu contexto.', description: 'Escolha os itens que fazem sentido para sua apresentação.' }, highlights: { eyebrow: 'Destaques', title: 'Um percurso construído com intenção.' }, testimonials: { eyebrow: 'Depoimentos', title: 'Experiências compartilhadas.' }, content: { eyebrow: 'Conteúdo', title: 'Leituras recentes.' } },
+    about: { hero: { eyebrow: 'Sobre', title: 'Uma apresentação que cria proximidade.', description: 'Use este espaço para ampliar a trajetória, o modo de trabalhar e o que orienta cada escolha.' }, highlights: { eyebrow: 'Trajetória', title: 'Pontos que ajudam a conhecer o perfil.' } },
+    items: { hero: { eyebrow: 'Itens', title: 'Possibilidades para diferentes momentos.', description: 'Apresente aqui o que é oferecido e como cada opção pode funcionar.' }, offered: { eyebrow: 'O que é oferecido', title: 'Escolhas explicadas com clareza.' }, audience: { eyebrow: 'Para quem', title: 'Encontre um ponto de partida.', description: 'Uma forma genérica de orientar pessoas para os itens mais adequados.', prefix: 'Para' }, faq: { eyebrow: 'FAQ', title: 'Perguntas frequentes.' } },
+    content: { hero: { eyebrow: 'Conteúdo', title: 'Ideias para acompanhar seu caminho.', description: 'Textos breves e úteis, organizados para uma leitura tranquila.' }, count: 'itens disponíveis', filter: 'Filtrar por categoria', all: 'Todos', categories: ['Orientações', 'Reflexões'] },
+    faq: { hero: { eyebrow: 'Dúvidas', title: 'Informações para seguir com segurança.', description: 'Respostas diretas para perguntas frequentes.' }, section: { eyebrow: 'FAQ', title: 'Perguntas frequentes.' } },
+    contact: { confirmation: 'Mensagem recebida. [texto de confirmação a definir]' },
+    post: { body: ['Este é um espaço de conteúdo rico, pronto para receber a redação definitiva do projeto.', 'Use parágrafos curtos, linguagem acessível e informações que ajudem quem lê a compreender o assunto com autonomia.', 'O conteúdo pode ser alimentado por um CMS ou por arquivos locais, sem alterar o componente de apresentação.'], heading: 'Um ponto para começar' },
+  },
   legal: { title: 'Política de privacidade', body: ['Este é um espaço reservado para as informações de privacidade, cookies e tratamento de dados aplicáveis ao projeto.', 'Substitua este texto por uma política revisada de acordo com a operação final.'] },
 };
