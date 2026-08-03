@@ -223,23 +223,6 @@ Todos os componentes são **100% configuráveis via props** — nenhum valor har
 
 ---
 
-## 🎯 Checklist de Reutilização (Para Novo Projeto)
-
-Ao usar este template em um novo projeto:
-
-- [ ] **Identidade**: Alterar `identity.name`, `monogram`, `description`
-- [ ] **Cores**: Editar tokens em `src/tokens/tokens.css`
-- [ ] **Fontes**: Trocar imports em `tokens.css` (manter estrutura)
-- [ ] **Navigation**: Adicionar/remover links em `navigation[]`
-- [ ] **Textos**: Editar todos os campos em `siteContent.js`
-- [ ] **Imagens**: Substituir URLs em `image.src` (use imagens próprias, não Unsplash)
-- [ ] **Serviços/Itens**: Configurar `items[]` conforme contexto
-- [ ] **Depoimentos**: Editar `testimonials[]` (ou remover se não necessário)
-- [ ] **Contato**: Definir `contact.channels[]` (email, tel, redes)
-- [ ] **Legal**: Reescrever `legal.body` conforme legislação local
-- [ ] **Testar**: Verificar responsividade, acessibilidade, velocidade
-
----
 
 ## 🔧 Tecnologia
 
@@ -268,55 +251,4 @@ Para manter acessibilidade:
 
 ---
 
-## 📚 Padrão de Commits
 
-Este projeto segue **Conventional Commits**:
-
-```
-feat(component): cria componente Hero com variantes esquerda/direita
-feat(page): monta página Home a partir dos componentes
-fix(component): corrige contraste do botão CTA para AA
-style(tokens): adiciona tokens de cor e tipografia
-docs: atualiza README com instruções de uso
-```
-
----
-
-## 🤝 Contribuindo
-
-Se estiver expandindo este template:
-
-1. Um commit = uma responsabilidade (componente OU página OU tokens)
-2. Nenhum conteúdo hardcoded — sempre usar props
-3. Nenhuma referência a nicho específico
-4. Testar em mobile, tablet e desktop
-5. Validar acessibilidade
-
----
-
-## 📝 Licença
-
-Este template é fornecido como base para projetos profissionais e institucionais.
-
----
-
-## ❓ Dúvidas Frequentes
-
-### P: Como adicionar uma nova página?
-R: Crie uma função em `src/pages.jsx` que retorna JSX usando os componentes. Adicione a rota em `App.jsx`.
-
-### P: Posso usar este template para múltiplos projetos?
-R: Sim! É totalmente reutilizável. Apenas atualize `siteContent.js` e `tokens.css` para cada projeto.
-
-### P: Como integrar com um CMS?
-R: Substitua `siteContent.js` com um fetch para sua API. A estrutura dos dados permanece a mesma.
-
-### P: Posso remover componentes?
-R: Sim! Import apenas o que precisa. Cada componente é independente.
-
-### P: Como customizar o layout?
-R: Edite `src/styles.css`. A grid e flex layout já estão otimizados, mas você pode adicionar mais CSS conforme necessário.
-
----
-
-**Construído com ❤️ para criar experiências digitais claras, acessíveis e consistentes.**
