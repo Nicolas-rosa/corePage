@@ -1,50 +1,137 @@
-# 🧩 Design System & Template de Site — Perfil Profissional/Institucional
+# 🧩 React Design System & Website Template
 
-Um **sistema de componentes reutilizável**, genérico e neutro em relação a tema/nicho, pronto para criar sites institucionais e de prestação de serviço de forma modular e consistente.
+> Um template React totalmente modular para criação de sites institucionais, portfólios e páginas de serviços, baseado em um **Design System reutilizável** e configurado através de um único arquivo de conteúdo.
 
----
-
-## ✨ Características
-
-- ✅ **Totalmente modular** — Componentes isolados com props editáveis
-- ✅ **Zero conteúdo hardcoded** — Tudo configurável via `siteContent.js`
-- ✅ **Design tokens centralizados** — Cores, tipografia, e espaçamento em `tokens.css`
-- ✅ **Responsivo mobile-first** — Funciona em qualquer dispositivo
-- ✅ **Acessibilidade WCAG AA** — Contraste apropriado, foco visível, alt text obrigatório
-- ✅ **Agnóstico de nicho** — Funciona para qualquer segmento (educação, saúde, consultoria, etc.)
-- ✅ **8+ páginas prontas** — Home, Sobre, Itens, Conteúdo, Post, Contato, FAQ, Privacidade
+Este projeto foi desenvolvido para acelerar a criação de novos sites sem duplicação de código. Toda a estrutura é desacoplada do conteúdo, permitindo reutilizar a mesma base para diferentes nichos apenas alterando textos, imagens, rotas e identidade visual.
 
 ---
 
-## 🚀 Como roddar
+# ✨ Funcionalidades
 
-### Pré-requisitos
-- Node.js 16+ instalado
-- npm ou pnpm
+## 🏗 Arquitetura
 
-### Instalação
+* Componentes reutilizáveis e independentes
+* Estrutura escalável e organizada
+* Separação entre layout e conteúdo
+* Zero conteúdo hardcoded
+* Código de fácil manutenção
+
+## 🎨 Customização
+
+* Conteúdo centralizado em um único arquivo
+* Sistema de rotas configurável
+* Suporte a múltiplos idiomas
+* Tema Claro/Escuro
+* Design Tokens centralizados
+* Componentes configuráveis via Props
+
+## 📱 Experiência do Usuário
+
+* Mobile First
+* Layout totalmente responsivo
+* Navegação por teclado
+* Compatível com WCAG AA
+* HTML semântico
+
+## ⚡ Desenvolvimento
+
+* React + Vite
+* CSS puro
+* Build otimizado
+* Estrutura simples para expansão
+
+---
+
+# 👥 Casos de Uso
+
+Este template pode ser utilizado para:
+
+* Portfólios
+* Empresas
+* Landing Pages
+* Clínicas
+* Consultórios
+* Advogados
+* Arquitetos
+* Designers
+* Desenvolvedores
+* Agências
+* Consultores
+* Prestadores de serviço
+* Restaurantes
+* Educação
+* Saúde
+* Qualquer outro segmento
+
+---
+
+# 📑 Índice
+
+* Funcionalidades
+* Tecnologias
+* Instalação
+* Estrutura do Projeto
+* Fluxo da Aplicação
+* Personalização
+* Design Tokens
+* Componentes
+* Páginas
+* Acessibilidade
+* Roadmap
+* Licença
+
+---
+
+# 🚀 Instalação
+
+## Pré-requisitos
+
+* Node.js 18+
+* npm ou pnpm
+
+## Clonar o projeto
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+
+cd seu-repositorio
+```
+
+## Instalar dependências
 
 ```bash
 npm install
 ```
 
-### Desenvolvimento
+## Executar em desenvolvimento
 
 ```bash
 npm run dev
 ```
 
-O servidor estará disponível em `http://localhost:5173`
+O projeto estará disponível em:
 
-### Build para Produção
+```
+http://localhost:5173
+```
+
+---
+
+## Gerar Build
 
 ```bash
 npm run build
 ```
 
-Os arquivos compilados estarão em `dist/`
+Os arquivos finais serão gerados em:
 
-### Preview do Build
+```
+dist/
+```
+
+---
+
+## Visualizar Build
 
 ```bash
 npm run preview
@@ -52,203 +139,328 @@ npm run preview
 
 ---
 
-## 📁 Estrutura de Pastas
+# 🛠 Tecnologias
 
-```
-src/
-├── App.jsx                    # App principal e roteador
-├── main.jsx                   # Entrada e renderização
-├── pages.jsx                  # Definição de páginas
-├── styles.css                 # Estilos globais
+* React
+* Vite
+* JavaScript
+* CSS3
+* Design Tokens
+
+---
+
+# 📁 Estrutura do Projeto
+
+```text
+src
 │
-├── components/                # Componentes reutilizáveis
-│   ├── Header.jsx             # Navegação e breadcrumb
-│   ├── Hero.jsx               # Seção de abertura
-│   ├── AboutBlock.jsx         # Bloco de apresentação
-│   ├── ItemCards.jsx          # Grid de serviços/itens
-│   ├── Highlights.jsx         # Lista de destaques/marcos
-│   ├── Testimonials.jsx       # Depoimentos/prova social
-│   ├── ContentCard.jsx        # Card genérico de conteúdo
-│   ├── FAQAccordion.jsx       # Accordeon de perguntas
-│   ├── ContactForm.jsx        # Formulário de contato
-│   ├── CTABanner.jsx          # Chamada para ação
-│   ├── FloatingContactButton.jsx # Botão flutuante
-│   ├── Button.jsx             # Componente botão base
-│   └── Footer.jsx             # Rodapé
+├── components/           # Componentes reutilizáveis
+│   ├── Button.jsx
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   ├── Hero.jsx
+│   ├── AboutBlock.jsx
+│   ├── ItemCards.jsx
+│   ├── Highlights.jsx
+│   ├── Testimonials.jsx
+│   ├── ContentCard.jsx
+│   ├── FAQAccordion.jsx
+│   ├── ContactForm.jsx
+│   ├── CTABanner.jsx
+│   └── FloatingContactButton.jsx
 │
 ├── data/
-│   └── siteContent.js         # Toda copy, textos e configurações
+│   └── siteContent.js
 │
-└── tokens/
-    └── tokens.css             # Design tokens (cores, fontes, espaçamento)
+├── pages/
+│
+├── tokens/
+│   └── tokens.css
+│
+├── App.jsx
+├── main.jsx
+└── styles.css
 ```
 
 ---
 
-## 🎨 Design Tokens
+# 🔄 Fluxo da Aplicação
 
-Todos os tokens visuais estão centralizados em `src/tokens/tokens.css`:
+Todo o projeto gira em torno de um único arquivo de configuração.
 
-### Cores
-| Token | Uso | Valor |
-|---|---|---|
-| `--color-bg` | Fundo principal | `#f7f0e8` |
-| `--color-bg-alt` | Fundo alternado | `#ffffff` |
-| `--color-text-primary` | Texto principal | `#2b2620` |
-| `--color-text-secondary` | Texto de apoio | `#6b6459` |
-| `--color-accent` | CTA, destaque | `#8a7a5c` |
-| `--color-accent-hover` | Hover do accent | `#6f6149` |
-| `--color-border` | Divisores, cards | `#e4dacb` |
+```text
+siteContent.js
+        │
+        ▼
+      App.jsx
+        │
+        ▼
+      Pages
+        │
+        ▼
+   Components
+        │
+        ▼
+ Interface Final
+```
 
-### Tipografia
-| Token | Uso | Fonte |
-|---|---|---|
-| `--font-heading` | Títulos | Fraunces, Georgia |
-| `--font-body` | Corpo | DM Sans, Arial |
-| `--text-hero` | H1 | clamp(2.7rem, 5vw, 4rem) |
-| `--text-h2` | H2 | clamp(2rem, 3.5vw, 2.8rem) |
-| `--text-body` | Parágrafo | 1.0625rem |
-
-### Espaçamento
-- `--space-1` até `--space-7` (de 0.5rem a 6rem)
-- Container máx: 75rem (1200px)
-- Radius padrão: 1rem (cards), 999px (buttons)
+Isso significa que praticamente todo o conteúdo do site pode ser alterado sem modificar os componentes.
 
 ---
 
-## 📝 Configurar Conteúdo
+# 🎨 Personalização
 
-**Tudo que aparece no site é definido em `src/data/siteContent.js`.**
+## Conteúdo
 
-Estrutura principal:
+Todo o conteúdo do site está centralizado em:
+
+```text
+src/data/siteContent.js
+```
+
+Nesse arquivo é possível alterar:
+
+* identidade
+* logotipo
+* textos
+* imagens
+* links
+* serviços
+* FAQ
+* depoimentos
+* páginas
+* artigos
+* SEO
+* botões
+* chamadas para ação
+
+---
+
+## Aparência
+
+Todos os estilos globais ficam em:
+
+```text
+src/tokens/tokens.css
+```
+
+É possível alterar:
+
+* cores
+* tipografia
+* espaçamentos
+* bordas
+* sombras
+* largura máxima
+* animações
+
+---
+
+## Rotas
+
+As rotas também são configuráveis.
+
+Exemplo:
 
 ```javascript
-export const siteContent = {
-  identity: { name, monogram, description },
-  navigation: [...],
-  labels: { menu, close, contact, ... },
-  hero: { eyebrow, title, description, image, primaryAction, ... },
-  about: { eyebrow, title, description, image, highlights, ...},
-  items: [...],                    // Serviços/possibilidades
-  milestones: [...],               // Destaques/marcos
-  testimonials: [...],             // Depoimentos
-  content: [...],                  // Posts/artigos
-  faq: [...],                      // Perguntas frequentes
-  contact: { eyebrow, title, ... },
-  cta: {...},                      // Chamada para ação
-  pages: { home, about, items, content, faq, contact, post }, // Textos das páginas
-  legal: { title, body }           // Política de privacidade
-};
-```
-
-### Exemplo: Alterar Cores
-
-Em `src/tokens/tokens.css`:
-
-```css
-:root {
-  --color-accent: #d4af37;  /* Mudou de #8a7a5c para dourado */
-  --color-accent-hover: #b8941c;
-  /* ... resto dos tokens */
+pathPages: {
+    home: "",
+    about: "sobre",
+    items: "servicos",
+    content: "blog",
+    contact: "contato",
+    faq: "faq",
+    privacy: "privacidade"
 }
 ```
 
-### Exemplo: Adicionar um Novo Item/Serviço
-
-Em `src/data/siteContent.js`:
+Também é possível utilizar um prefixo:
 
 ```javascript
-items: [
-  { icon: '01', title: 'Serviço A', description: 'Descrição breve' },
-  { icon: '02', title: 'Serviço B', description: 'Descrição breve' },
-  // Adicionar novo:
-  { icon: '03', title: 'Serviço C', description: 'Descrição breve' },
-]
+pathPrefix: "empresa"
+```
+
+Resultado:
+
+```
+/empresa
+/empresa/sobre
+/empresa/blog
 ```
 
 ---
 
-## 🏗️ Componentes
+## Idiomas
 
-### Button
+O template suporta múltiplos idiomas através do objeto:
+
+```javascript
+siteContent = {
+    pt: {...},
+    en: {...}
+}
+```
+
+A troca de idioma é feita dinamicamente pela aplicação.
+
+---
+
+# 🎨 Design Tokens
+
+Todos os valores visuais estão centralizados em:
+
+```text
+src/tokens/tokens.css
+```
+
+## Cores
+
+```css
+--color-bg
+--color-bg-alt
+--color-text-primary
+--color-text-secondary
+--color-accent
+--color-accent-hover
+--color-border
+```
+
+## Tipografia
+
+```css
+--font-heading
+--font-body
+--text-hero
+--text-h2
+--text-body
+```
+
+## Espaçamentos
+
+```css
+--space-1
+--space-2
+--space-3
+--space-4
+--space-5
+--space-6
+--space-7
+```
+
+Alterando esses valores todo o projeto é atualizado automaticamente.
+
+---
+
+# 🧩 Componentes
+
+Todos os componentes são independentes e recebem seus dados via Props.
+
+Exemplo:
+
 ```jsx
-<Button 
-  action={{ label: 'Saiba mais', href: '/sobre' }} 
-  variant="primary" // 'primary' | 'secondary' | 'text'
+<Button
+    action={{
+        label: "Saiba mais",
+        href: "/sobre"
+    }}
+    variant="primary"
 />
 ```
 
-### Hero
+Outro exemplo:
+
 ```jsx
-<Hero 
-  eyebrow="Apresentação"
-  title="Clareza para dar o próximo passo"
-  description="Uma presença digital..."
-  image={{ src: 'url', alt: 'descrição' }}
-  primaryAction={{ label: 'Ação', href: '/' }}
+<Hero
+    eyebrow="Apresentação"
+    title="Seu título"
+    description="Sua descrição"
+    image={{
+        src: "...",
+        alt: "..."
+    }}
+    primaryAction={{
+        label: "Contato",
+        href: "/contato"
+    }}
 />
 ```
 
-### ItemCards
-```jsx
-<ItemCards 
-  eyebrow="Possibilidades"
-  title="Seus itens"
-  items={content.items}
-  columns={3}
-/>
-```
-
-### FAQAccordion
-```jsx
-<FAQAccordion items={content.faq} />
-```
-
-Todos os componentes são **100% configuráveis via props** — nenhum valor hardcoded.
+Nenhum componente possui textos fixos.
 
 ---
 
-## 📄 Páginas Implementadas
+# 📄 Páginas Disponíveis
 
-| Página | Rota | Descrição |
-|---|---|---|
-| Home | `/` | Apresentação completa, com Hero, Sobre, Itens, Destaques, Depoimentos, Conteúdo e CTA |
-| Sobre | `/sobre` | Apresentação expandida com trajetória e destaques |
-| Itens | `/itens` | Catálogo completo de serviços/possibilidades |
-| Conteúdo | `/conteudo` | Grid de posts/artigos com filtro por categoria |
-| Post | `/conteudo/[slug]` | Artigo individual com related content |
-| Contato | `/contato` | Formulário de contato com informações diretas |
-| FAQ | `/faq` | Perguntas frequentes dedicadas |
-| Privacidade | `/privacidade` | Política de privacidade |
-
----
-
-
-## 🔧 Tecnologia
-
-- **React 18** — Framework UI
-- **Vite** — Build tool rápida e moderna
-- **CSS 3** — Estilos nativos (sem pré-processadores)
-- **Design Tokens** — Sistema de design centralizado
+| Página      | Descrição                               |
+| ----------- | --------------------------------------- |
+| Home        | Página inicial                          |
+| Sobre       | Apresentação da empresa ou profissional |
+| Itens       | Lista de serviços ou produtos           |
+| Conteúdo    | Blog ou artigos                         |
+| Post        | Página individual de conteúdo           |
+| Contato     | Formulário de contato                   |
+| FAQ         | Perguntas frequentes                    |
+| Privacidade | Política de Privacidade                 |
 
 ---
 
-## ♿ Acessibilidade
+# ♿ Acessibilidade
 
-O template foi construído com acessibilidade em mente:
+O template foi desenvolvido seguindo boas práticas de acessibilidade.
 
-- ✅ Contraste WCAG AA mínimo em todos os textos
-- ✅ Foco visível em interativos (`outline-offset: 4px`)
-- ✅ Alt text obrigatório em imagens
-- ✅ Semântica HTML apropriada (header, nav, main, article, footer)
-- ✅ Navegação por teclado completa
-- ✅ Aria labels onde necessário
+Inclui:
 
-Para manter acessibilidade:
-- Sempre forneça `alt` em imagens
-- Mantenha contraste min. 4.5:1 para texto pequeno
-- Não remova focus indicators
+* Contraste WCAG AA
+* Navegação por teclado
+* Focus visível
+* HTML semântico
+* Alt obrigatório para imagens
+* Labels apropriadas
+* Estrutura compatível com leitores de tela
+
+Para manter a acessibilidade:
+
+* sempre utilize texto alternativo em imagens;
+* mantenha contraste mínimo de 4.5:1;
+* não remova indicadores de foco;
+* utilize títulos em ordem hierárquica.
 
 ---
 
+# 🚧 Roadmap
 
+## Concluído
+
+* Tema Claro/Escuro
+* Internacionalização
+* Sistema de Rotas
+* Componentes reutilizáveis
+* Design Tokens
+* Responsividade
+* Layout Mobile First
+* WCAG AA
+
+## Futuro
+
+* Busca de conteúdo
+* Storybook
+* Testes automatizados
+* Tema customizável em tempo real
+* CMS opcional
+* Animações avançadas
+
+---
+
+# 🤝 Contribuição
+
+Contribuições são bem-vindas.
+
+Caso encontre algum problema ou tenha sugestões de melhorias, abra uma *Issue* ou envie um *Pull Request*.
+
+---
+
+# 📄 Licença
+
+Este projeto está disponível sob a licença **MIT**.
+
+Sinta-se à vontade para utilizá-lo, modificá-lo e adaptá-lo para projetos pessoais ou comerciais.
